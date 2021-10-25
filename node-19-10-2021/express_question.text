@@ -1,0 +1,14 @@
+express_pre_3_1:
+__dirname = the path dirctory of the spesific file.
+
+
+express_pre_3_2:
+path.join = is bilding the full path of dirctory public, which we put all the js/css files and imeges and so'.
+
+
+express_pre_3_3:
+A - in the networke we see a req to get the style.css file from the server, and this file is inside public/css path.
+B - each file and url's the are not part of our code we wrtie, the serever is downloading to the clint.
+C - change the name in the serever and in the dirctory.
+E - same like question C.
+F - same like question C
