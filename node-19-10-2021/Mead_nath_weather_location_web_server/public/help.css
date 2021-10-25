@@ -1,0 +1,23 @@
+body{
+    background-color: cornflowerblue;
+}
+h1{
+    text-align: center;
+    font-size: 150%;
+    margin-top: 5%;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li a {
+    display: block;
+    width: 50px;
+    background-color: yellow;
+  }
+  li a:hover {
+  
+    background-color: red;
+  }

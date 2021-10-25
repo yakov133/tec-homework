@@ -1,0 +1,58 @@
+* {
+  font-family: "Oswald", sans-serif;
+  font-size: 105%;
+}
+body {
+  background-color: #f6a761;
+  border: 5px black solid;
+  width: 40%;
+  border-radius: 5%;
+  box-shadow: 4px 4px 4px  black;
+  padding: 100px;
+  margin-left: 25%;
+  margin-top: 5%;
+}
+ul {
+  list-style-type: none;
+  display: flex;
+}
+li {
+  list-style-type: none;
+  display: inline;
+  padding:2%;
+}
+
+#home{
+  background-color: white  ;
+}
+li a {
+  display: block;
+  width: 50px;
+  background-color: white  ;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #A46c5d;
+}
+
+form {
+  text-align: center;
+  font-size: larger;
+  margin-top: 5%;
+}
+.shape {
+  border: 4px black solid;
+  border-radius: 10px;  
+  padding: 3%; 
+}
+#aboutPic{
+  border-radius: 50%;
+  width: 250px;
+  height: 250;  
+}
+
+.selction {
+  background-color: springgreen;
+  text-align: center;
+  display: block;
+}

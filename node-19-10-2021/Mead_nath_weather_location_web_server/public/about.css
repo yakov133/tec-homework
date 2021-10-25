@@ -1,0 +1,32 @@
+body{
+    background-color: salmon;
+}
+img{
+    width: 20%;
+    height: 30%;
+    margin-top: 5%;
+    margin-left: 40%;
+    margin-right: 45%;
+}
+h1{
+    text-align: center;
+    font-size: 150%;
+}
+p{
+    text-align: center;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li a {
+    display: block;
+    width: 0px;
+    background-color: yellow;
+  }
+  li a:hover {
+  
+    background-color: red;
+  }

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+    <title>Wheater Page</title>
+</head>
+
+<body>
+    <header>
+       <nav>
+        <ul>
+            <li><a href="help.html">Help</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+       </nav>
+    </header>
+    
+    <br>
+    <form class="shape" onsubmit="submitForm(event)">
+        <label for="option">Choose an option:</label>
+        <select name="option" id="option">
+          <option value="city">City</option>
+          <option value="location">Location</option>
+          <option value="coordinates">Coordinates</option>
+        </select>
+        <br><br>
+        <button type="submit">Let's start!   </button>
+      </form>
+      
+      <br>  
+    <form action="/city" id="city" method="get">
+        <!-- <img src="./WeatherPic.png" alt="Weather picture"> -->
+        <br>
+        <label for="">Weather base of a City</label>
+        <input id="city" type="text" name="city" placeholder="enter a city">
+        <button type="submit">submit</button>
+    </form>
+
+    <form action="/coordinates" id="coordinates" method="get">
+        <!-- <img src="./WeatherPic.png" alt="Weather picture"> -->
+        <br>
+        <label for="">Weather base of a Latitude & Longitude</label>
+        <br>
+        <label for="Latitude">Latitude</label>
+        <input id="Latitude" type="text" name="lat" placeholder="Latitude">
+        <br>
+        <label for="Longitude">Longitude:</label>
+        <input id="Longitude" type="text" name="lon" placeholder="Longitude">
+        <br>    
+        <button type="submit">submit</button>
+    </form>
+
+    <form action="/location" id="location" method="get">
+        <!-- <img src="./WeatherPic.png" alt="Weather picture"> -->
+        <br>
+        <label for="">Weather base of a your Location</label>
+        <br>
+        <button type="submit">submit</button>
+    </form>
+<script src="./index.js"></script>
+</body>
+
+</html>
