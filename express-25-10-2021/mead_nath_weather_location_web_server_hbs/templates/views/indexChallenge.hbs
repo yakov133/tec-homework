@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+    {{!-- <link rel="stylesheet" href="css/styles.css"> --}}
+    
+</head>
+<body>
+     {{>header}}
+     
+
+      
+     <form action="/cityChallenge" method="get">
+        <label for="city">Weather base of a City</label>
+        <br>
+        <input id="city" type="text" name="city" placeholder="enter a city">
+        <button type="submit">submit</button>
+    </form>
+    
+    <p>{{name}}</p>
+    <p><img src={{img}}></p>
+    <p>{{description}}</p>
+    <p>{{lat}}</p>
+    <p>{{lon}}</p>
+
+    
+    {{>footer}}
+    <script src="js/app.js"></script>
+</body>
+</html>

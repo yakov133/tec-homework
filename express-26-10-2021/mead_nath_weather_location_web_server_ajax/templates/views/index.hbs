@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+    {{!-- <link rel="stylesheet" href="css/styles.css"> --}}
+    
+</head>
+<body>
+     {{>header}}
+     
+    <h1>This is Help - {{somekey}}</h1>    
+    <h1>This is Help2 - {{somekey2}}</h1> 
+      
+     {{!-- <form action="/city" method="get">
+        <label for="city">Weather base of a City</label>
+        <br>
+        <input id="city" type="text" name="city" placeholder="enter a city">
+        <button type="submit">submit</button>
+    </form> --}}
+    
+    <form id="form">
+        <label for="city">Weather base of a City</label>
+        <br>
+        <input id="city" type="text" name="city" placeholder="enter a city">
+        <button type="submit">submit</button>
+    </form>
+    
+    <section id="info"></section>
+
+
+    
+    {{>footer}}
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
