@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="getAllTasks()">Get tasks</button>
+    <br>
+
+    <form id="formNameTask">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" placeholder="task name" required>
+        <button type="submit">add new Task</button>
+    </form>
+
+    <br>
+    
+    <form id="sercehId">
+        <label for="id">Id</label>
+        <input type="number" name="id" id="serid" placeholder="task ID" required>
+        <button type="submit">Search by id</button>
+    </form>
+
+    <form id="deleteId">
+        <label for="id">Id</label>
+        <input type="number" name="id" id="delid" placeholder="task ID" required>
+        <button type="submit">Delete by id</button>
+    </form>
+    
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./index.js" type="text/javascript"></script>
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+GET http://localhost:8080/task 
+
+###
+
+GET http://localhost:8080/task/2
+
+###
+
+POST http://localhost:8080/task
+Content-Type: application/json
+
+{
+    "name": "Anat"
+}
+
+###
+
+DELETE http://localhost:8080/del/2
