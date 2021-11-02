@@ -1,0 +1,25 @@
+GET http://localhost:8080/todos
+###
+
+POST http://localhost:8080/todos
+Content-Type: application/json
+
+{
+    "userId": 1,
+    "id": 10,
+    "title": "illo est ratione doloremque quia maiores aut",
+    "completed": true
+}
+
+###
+DELETE http://localhost:8080/todos/617fba15ae20fc9674e18950
+
+
+###
+PATCH http://localhost:8080/todos/617fa4df1ed739b5e51993e9
+Content-Type: application/json
+
+{
+    "age":30,
+    "completed":true
+}
