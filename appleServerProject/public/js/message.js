@@ -36,3 +36,18 @@ function showOnDom(data) {
     } 
 }
 }
+
+function changeCarNum() {
+  let num = document.getElementById("cartItems");
+  num.style.color = "sandybrown";
+
+  axios
+    .get("/getCart/61903a03c4163ab1b03e925d")
+    .then((response) => {
+      num.innerText = response.data.proudcts.length;
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+}
+changeCarNum();

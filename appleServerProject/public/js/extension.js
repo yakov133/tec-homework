@@ -4,7 +4,7 @@ let clickedItem;
 
 function changeCarNum() {
     let num = document.getElementById("cartItems");
-    num.style.color = "black";
+    num.style.color = "yellowgreen";
   
     axios
       .get("/getCart/61903a03c4163ab1b03e925d")

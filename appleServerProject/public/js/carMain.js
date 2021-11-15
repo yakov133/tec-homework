@@ -4,7 +4,7 @@ let element = document.getElementById("tbody");
 let sum = 0
 let num = document.getElementById("cartItems");
 
-num.style.color = "black";
+num.style.color = "sienna";
 
 
 function makeCart(){

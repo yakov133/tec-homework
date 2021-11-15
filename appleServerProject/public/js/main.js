@@ -1,7 +1,7 @@
 
 function changeCarNum() {
     let num = document.getElementById("cartItems");
-    num.style.color = "black";
+    num.style.color = "royalblue";
   
     axios
       .get("/getCart/61903a03c4163ab1b03e925d")

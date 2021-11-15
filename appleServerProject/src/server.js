@@ -144,3 +144,10 @@ app.get("*", (req, res) => {
 app.listen(PORT, () => {
   console.log(`server listens on port : ${PORT}`);
 });
+
+
+
+let arr = [1,2,3,4,5,6,7,8,9,10];
+let newarr = arr.map(elm=>elm**2);
+let filter = arr.filter((elm)=>elm>6);
+console.log(filter);
