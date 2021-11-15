@@ -33,7 +33,8 @@ function helperTogettheproducts(arr) {
 function showCart(data) {
   for (const iterator of data) {
     console.log(iterator);
-    sum += iterator.price;
+    sum += Number(iterator.price);
+    // sum += iterator.price;
     element.innerHTML += `<tr id=${iterator.key} onclick = deleteFromDom('${iterator._id}','${iterator.key}','${iterator.price}')>
             <th scope="row">${iterator.id}</th>
             <td>${iterator.name}</td>

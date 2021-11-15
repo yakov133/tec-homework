@@ -209,6 +209,7 @@ function deleteProduct(req, res) {
 function updateProduct(req, res) {
   var myquery = { _id: ObjectId(req.params.id) };
   const obj = req.body;
+  
   MongoClient.connect(url, function (err, db) {
     if (err) {
       throw err;

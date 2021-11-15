@@ -7,7 +7,9 @@ const path = require("path"),
   app = express(),
   PORT = 8080,
   publicPath = path.join(__dirname, "..", "public");
-publicHtmlPath = path.join(__dirname, "..", "templates/views");
+// publicHtmlPath = path.join(__dirname, "..", "templates/views");
+publicHtmlPath = path.join(__dirname, "..", "templates/html");
+
 
 const utilis = require("./utilies");
 

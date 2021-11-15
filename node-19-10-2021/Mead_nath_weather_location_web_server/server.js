@@ -8,7 +8,7 @@ const navigator = new Navigator();
 //
 
 app.use(express.static(path.join(__dirname, "public")));
-console.log(__dirname);
+
 
 app.get("/city", (req, res) => {
   const query = req.query;

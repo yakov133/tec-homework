@@ -102,18 +102,27 @@ function changeCarNum() {
   function updateClickedItem(tempId){
     clickedItem = tempId;
     document.getElementById("idProduct").innerText=`Product ID = ${clickedItem}`;
-    
   }
+  
   function update() {
     let name = document.getElementById("name").value;
     let price = document.getElementById("price").value;
     
+    // axios
+    // .patch(`http://localhost:8080/updateProduct/${clickedItem}`, { name,price })
+    // .then((response) => {
+    //   items.innerHTML="";
+    //   getProducts();
+    //   })
+    //   .catch((err) => console.log(err));
+
     axios
-    .patch(`http://localhost:8080/updateProduct/${clickedItem}`, { name,price })
+    .patch(`updateProduct/${clickedItem}`, { name,price })
     .then((response) => {
       items.innerHTML="";
       getProducts();
       })
       .catch((err) => console.log(err));
+    
     
   }
