@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class Student {
+            constructor(name, age, gender) {
+                this.name = name;
+                this.gender = gender;
+                this.age = age
+            }
+            write() {
+                for (const key in this) {
+                    console.log(`${key} = ${this[key]}`);
+                }
+            }
+            isYoung() {
+                return this.age > 18 ? true : false;
+            }
+        }
+
+        const student1 = new Student("yakov", 27, "male");
+
+        const student2 = new Student("barak obama", 17, "male");
+        const student3 = new Student("dounald trump", 45, "male");
+
+
+        //! targil 1
+        student1.write();
+
+        // targil 2
+        console.log(student2.isYoung());
+        console.log(student3.isYoung());
+
+        // targil 3
+        
+        let arrayStudets = [student1, student2, student3];
+        for (const student of arrayStudets) {
+            console.log(student.isYoung());        
+        }
+
+    </script>
+</body>
+
+</html>
