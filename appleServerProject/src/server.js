@@ -1,11 +1,12 @@
 var MongoClient = require("mongodb").MongoClient;
-var url = "mongodb://localhost:27017/";
+
+require("dotenv").config({path:`../.env`});
 
 const axios = require("axios");
 const express = require("express");
 const path = require("path"),
   app = express(),
-  PORT = 8080,
+  PORT = process.env.PORT,
   publicPath = path.join(__dirname, "..", "public");
 // publicHtmlPath = path.join(__dirname, "..", "templates/views");
 publicHtmlPath = path.join(__dirname, "..", "templates/html");
@@ -147,7 +148,3 @@ app.listen(PORT, () => {
 
 
 
-let arr = [1,2,3,4,5,6,7,8,9,10];
-let newarr = arr.map(elm=>elm**2);
-let filter = arr.filter((elm)=>elm>6);
-console.log(filter);

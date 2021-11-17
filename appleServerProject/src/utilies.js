@@ -1,6 +1,8 @@
 const axios = require("axios");
 var mongodb = require("mongodb");
-require("dotenv").config();
+
+require("dotenv").config({path:`../.env`});
+
 const { v4: uuidv4 } = require("uuid");
 const MongoClient = mongodb.MongoClient;
 const url = process.env.MONGODB_URL || "mongodb://localhost:27017/appleStore";
