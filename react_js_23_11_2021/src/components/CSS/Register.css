@@ -1,0 +1,27 @@
+.bigDiv {
+  text-align: center;
+  margin-top: 15%;
+  padding: 5%;
+  background-color: rgba(120, 144, 159, 0.502);
+}
+.greenColor {
+  color: rgb(44, 130, 44);
+  text-align: left;
+}
+.sameLine {
+  display: flex;
+  z-index: 1;
+}
+
+#hr1 {
+    border-top: 1px solid black;
+    z-index: 3  ; 
+    width:10%;
+    margin-left : 35%;
+}
+#hr2 {
+    border-top: 1px solid black;
+    z-index: 3  ; 
+    width:10%;
+    margin-right: 35%;
+}

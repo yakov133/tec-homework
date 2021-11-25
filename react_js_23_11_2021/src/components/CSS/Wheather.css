@@ -1,0 +1,29 @@
+.mainDiv{
+    background-image: url("https://cdn.pixabay.com/photo/2021/08/17/14/48/sea-6553205_960_720.jpg");
+    background-repeat: no-repeat;
+    /* text-align:center; */
+    width: 80%;
+    height: 600px;
+    margin-top: 10%;
+    margin-left: 25%;
+}
+#textInfo{
+    margin-left: 30%;
+    margin-top: 5%;
+}
+#btn{
+    margin-left: 34%;
+    margin-top: 1%;
+    background-color: rgb(28, 102, 238);
+    height: 8%;
+    width: 5%;
+    color: white;
+}
+h1{
+margin-left: 25%;
+margin-top: 5%;
+}
+h3{
+    margin-left: 28%;
+    margin-top: 3%;
+}
