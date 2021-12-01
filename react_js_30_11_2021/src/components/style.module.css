@@ -1,0 +1,21 @@
+.centerAll{
+    text-align: center;
+    margin: 10%;
+}
+.countNum{
+    font-size: 30px;
+    color: indianred;
+    font-weight: bold;
+}
+
+.marginNum button{
+    padding: 2%;
+    background-color:salmon;
+}
+
+.options button{
+    padding: 2%;
+    background-color:lightsalmon;
+    margin-left: 2%;
+    margin-right: 2%;
+}
