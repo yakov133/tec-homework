@@ -1,0 +1,50 @@
+
+.links{
+  color: white;
+  text-decoration: none ;
+  margin: 10px;
+  font-size: larger;
+  transition: all 0.2s;
+}
+.links:hover{
+  border-bottom:4px solid red;
+}
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  height: 80px  ;
+  color: white  ;
+}
+.mini_list{
+  margin:30px;
+}
+
+.editorName{
+  margin:10px;
+}
+.red{
+  color:red;
+  font-size: 50px;
+}
+.lastName{
+  font-size: 50px;
+}
+
+.footer, .sourc{
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black ;
+  color: white;
+  text-align: center;
+}
+
+.a-herf a img{
+  margin: 40px;
+  width: 35px;
+}
+

@@ -1,0 +1,20 @@
+.imgStyle{
+    width: 20%;
+    height: 30%;
+}
+.Name,.Author,.Pages,.Summary{
+    background-color: red;
+    color: white;
+    font-weight: bold;
+}
+.Author{
+    background-color: black;
+}
+.Pages{
+    background-color: yellow;
+    color: black;
+}
+.Summary{
+    background-color: sandybrown;
+    color: black;
+}

@@ -1,0 +1,14 @@
+.main_background{
+    background-color: rgb(195, 192, 192);
+    height: 700px;
+}
+.inner_main{
+    position: relative;
+    left: 25%;
+    right: 25%;
+    top:25%;
+    
+}
+img{
+    background-color: white;
+}

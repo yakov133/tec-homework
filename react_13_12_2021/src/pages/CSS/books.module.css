@@ -1,0 +1,33 @@
+.styleTable{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+table, td, th {  
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  th{
+    text-align: center;
+  }
+  table {
+    border-collapse: collapse;
+    width: 80%;
+  }
+  
+  th, td {
+    padding: 15px;
+  }
+  .buttonStyle{
+      text-align: center;
+  }
+  button{
+    background-color: rgb(86, 180, 238);    
+    color: white;
+  }
+  .btnAddBook{
+    margin: 1%;
+    background-color: black;
+    width: 150px;
+    height: 60px;
+  }

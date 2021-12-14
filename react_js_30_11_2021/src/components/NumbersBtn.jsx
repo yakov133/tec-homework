@@ -3,19 +3,34 @@ import Message from './Message'
 import * as style from "./style.module.css"
 
 export default class NumbersBtn extends Component {
-    state={arr:[],show:false,count:0,results:""}
+    state={ 
+        arr:[],
+        arr2:[],
+        show:false,
+        count:0,
+        results:""
+    }
     timer;
 
     componentDidMount(){
         let tempArr=[];
-        for (let index = 0; index < 10; index++) {
-            tempArr.push({num:Math.floor(Math.random()*19+1),click:false});
+        let thereIsOneEve =true;
+        while (thereIsOneEve) {
+            for (let index = 0; index < 10; index++) {
+                let randNum = Math.floor(Math.random()*19+1);
+                tempArr.push({num:randNum,click:false});
+                if(randNum%2 === 0){
+                    thereIsOneEve = false
+                }
+            }
         }
         this.setState({arr:tempArr});
         this.timer = setInterval(()=>{
             this.setState({count:this.state.count +1});
         },1000)
     }
+   
+
     btnMaker = (item,i) => <button onClick={()=>this.disableOn(i)} disabled={this.state.arr[i].click} key={i} > {item.num} </button>
     
     disableOn=(i)=>{
@@ -25,6 +40,8 @@ export default class NumbersBtn extends Component {
             temp[i].click=true;
             this.setState({arr:temp})
             this.gameOver();
+        }else{
+            this.setState({count:this.state.count +1});
         }
     }
     gameOver = ()=>{
@@ -85,7 +102,7 @@ export default class NumbersBtn extends Component {
                 <Message show={this.state.show}/>
                 <div className={style.options}>
                 <button onClick={this.getResult}>All Results</button>
-                <button onClick={this.restartGame}>Restart here!</button>
+                <button onClick={this.restartGame}>Play again!</button>
                 <button onClick={this.clearAll}>Clear All</button>
                 </div>
                 <ul>
