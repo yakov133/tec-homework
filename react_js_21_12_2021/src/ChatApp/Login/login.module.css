@@ -1,0 +1,32 @@
+.icon{
+    width: 4vh;
+    height: 3vh;
+    margin-right: 1%;
+}
+.tab{
+    display: flex;
+    justify-content: center ;
+    margin-bottom: 1%;
+}
+input{
+    height: 60%;
+    font-size:20px;
+    width: 40%; 
+}
+form{
+margin-top: 8% ;
+}
+.btnLogin{
+    width: 44%;
+    font-size:24px;
+    background-color: black;
+    color:white;
+    text-align: center;   
+}
+section{
+    font-weight: bold;
+    font-size: 24px;
+}
+.header{
+    margin-bottom: 2%;
+}
