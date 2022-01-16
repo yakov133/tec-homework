@@ -1,0 +1,7 @@
+.img_Booklist{
+    width: 400px;
+    height: 500px;
+}
+.btn_Booklist:hover{
+    background-color: rgb(242, 61, 61);
+}
